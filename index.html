@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan — Rajendra & Nirwasita</title>
+  <meta name="description" content="Undangan pernikahan Rajendra & Nirwasita — 09 Juni 2026" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <p class="loader-initials">R & N</p>
+      <div class="loader-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="Bandaneira Sampai Jadi Debu unofficial music video.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Music Toggle -->
+  <button id="music-control" class="music-toggle hidden" aria-label="Toggle musik">
+    <i class="fas fa-music"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav id="floating-nav" class="bottom-nav hidden">
+    <a href="#hero" class="nav-dot active" title="Beranda"><i class="fas fa-home"></i></a>
+    <a href="#mempelai" class="nav-dot" title="Mempelai"><i class="fas fa-heart"></i></a>
+    <a href="#acara" class="nav-dot" title="Acara"><i class="fas fa-calendar-alt"></i></a>
+    <a href="#galeri" class="nav-dot" title="Galeri"><i class="fas fa-images"></i></a>
+
+  </nav>
+
+  <!-- ===== COVER ===== -->
+  <section id="cover" class="cover">
+    <div class="cover-dim"></div>
+    <div class="cover-body">
+      <p class="cover-tag">Undangan Pernikahan</p>
+      <h1 class="cover-couple">Rajendra<br><span class="amp">&</span><br>Nirwasita</h1>
+      <p class="cover-date">09 . 06 . 2026</p>
+      <div class="cover-guest-box">
+        <p class="cover-to">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+        <p class="cover-guest-name">Tamu Undangan Terhormat</p>
+      </div>
+      <button id="btn-open" class="btn-open">
+        <i class="fas fa-envelope-open"></i> Buka Undangan
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main-content" class="hidden">
+
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="wrap">
+        <div class="hero-photo-box">
+          <img src="IMG_2314.png" alt="Rajendra dan Nirwasita" class="hero-photo" />
+        </div>
+        <p class="label">The Wedding Of</p>
+        <h2 class="couple-name">Rajendra & Nirwasita</h2>
+        <div class="separator"><span></span><i class="fas fa-leaf"></i><span></span></div>
+        <blockquote class="verse">
+          "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+          pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
+          dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
+          kasih dan sayang."
+          <cite>QS. Ar-Rum: 21</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section id="countdown" class="section countdown">
+      <div class="wrap">
+        <p class="label">Menuju Hari Bahagia</p>
+        <div class="timer">
+          <div class="timer-block">
+            <span id="days" class="timer-num">00</span>
+            <span class="timer-label">Hari</span>
+          </div>
+          <div class="timer-block">
+            <span id="hours" class="timer-num">00</span>
+            <span class="timer-label">Jam</span>
+          </div>
+          <div class="timer-block">
+            <span id="minutes" class="timer-num">00</span>
+            <span class="timer-label">Menit</span>
+          </div>
+          <div class="timer-block">
+            <span id="seconds" class="timer-num">00</span>
+            <span class="timer-label">Detik</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMPELAI -->
+    <section id="mempelai" class="section mempelai">
+      <div class="wrap">
+        <p class="label">Mempelai</p>
+        <div class="mempelai-row">
+
+          <div class="person anim-up">
+            <div class="person-img-wrap">
+              <img src="https://picsum.photos/400/400?random=2" alt="Rajendra" class="person-img" />
+            </div>
+            <h3 class="person-name">Rajendra</h3>
+            <p class="person-parents">Putra dari Bapak Montague & Ibu Montague</p>
+            <p class="person-bio">Pemuda yang gemar berpetualang dan mendedikasikan hidupnya untuk kebahagiaan keluarga.
+            </p>
+            <a href="#" class="person-ig"><i class="fab fa-instagram"></i> @romeo_instagram</a>
+          </div>
+
+          <div class="amp-circle anim-up">&</div>
+
+          <div class="person anim-up">
+            <div class="person-img-wrap">
+              <img src="https://picsum.photos/400/400?random=3" alt="Nirwasita" class="person-img" />
+            </div>
+            <h3 class="person-name">Nirwasita</h3>
+            <p class="person-parents">Putri dari Bapak Capulet & Ibu Capulet</p>
+            <p class="person-bio">Sosok penyayang yang selalu percaya bahwa cinta sejati mampu menjembatani segala
+              perbedaan.</p>
+            <a href="#" class="person-ig"><i class="fab fa-instagram"></i> @juliet_instagram</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACARA -->
+    <section id="acara" class="section acara">
+      <div class="wrap">
+        <p class="label">Rangkaian Acara</p>
+        <div class="event-cards">
+          <div class="event-card anim-up">
+            <div class="event-icon"><i class="fas fa-ring"></i></div>
+            <h3 class="event-title">Akad Nikah</h3>
+            <hr class="event-line" />
+            <p><i class="far fa-calendar-alt"></i> Selasa, 09 Juni 2026</p>
+            <p><i class="far fa-clock"></i> 07.00 – 08.00 WIB</p>
+            <p><i class="fas fa-map-marker-alt"></i> SMKN 13 Bandung</p>
+            <a href="https://maps.app.goo.gl/LAaDzaEBEgUeoSPv7" target="_blank" rel="noopener" class="btn-map">
+              <i class="fas fa-map-marked-alt"></i> Lihat Lokasi
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri" class="section galeri">
+      <div class="wrap">
+        <p class="label">Galeri Prewedding</p>
+        <div class="gallery" id="gallery-container"></div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <button class="lb-close" aria-label="Tutup">&times;</button>
+      <img class="lb-img" id="lightbox-img" alt="Foto prewedding" />
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrap">
+        <div class="separator"><span></span><i class="fas fa-heart"></i><span></span></div>
+        <p class="footer-couple">R & N</p>
+        <p class="footer-msg">Terima kasih atas doa restu Anda.<br>Merupakan suatu kehormatan dan kebahagiaan bagi kami
+          apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
+        <p class="footer-copy">&copy; 2026 Rajendra & Nirwasita</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Petals -->
+  <div id="petals-container"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
