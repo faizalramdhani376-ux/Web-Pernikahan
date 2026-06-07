@@ -114,17 +114,16 @@ document.addEventListener('keydown', e => {
 // --- Petals ---
 function initPetals() {
   const box = document.getElementById('petals-container');
-  const colors = ['rgba(212,166,154,0.35)', 'rgba(168,184,156,0.3)', 'rgba(235,228,214,0.35)'];
 
-  for (let i = 0; i < 18; i++) {
+  for (let i = 0; i < 20; i++) {
     const p = document.createElement('div');
     p.className = 'petal';
     p.style.left = Math.random() * 100 + 'vw';
-    p.style.width = (Math.random() * 10 + 8) + 'px';
-    p.style.height = (Math.random() * 10 + 8) + 'px';
-    p.style.background = colors[Math.floor(Math.random() * 3)];
-    p.style.animationDuration = (Math.random() * 5 + 6) + 's';
-    p.style.animationDelay = (Math.random() * 7) + 's';
+    const size = Math.random() * 6 + 10;
+    p.style.width = size + 'px';
+    p.style.height = size + 'px';
+    p.style.animationDuration = (Math.random() * 5 + 7) + 's';
+    p.style.animationDelay = (Math.random() * 8) + 's';
     box.appendChild(p);
   }
 }

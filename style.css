@@ -500,15 +500,29 @@ button { font-family: inherit; cursor: pointer; }
   gap: 24px;
 }
 .event-card {
+  position: relative;
   background: var(--white);
-  border-radius: 16px;
-  padding: 36px 28px;
+  border-radius: 20px;
+  padding: 40px 28px;
   min-width: 280px;
   max-width: 400px;
   flex: 1;
   text-align: center;
-  border-top: 3px solid var(--sage);
-  box-shadow: 0 2px 14px rgba(0,0,0,0.03);
+  border: 2px solid var(--gold-light);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.event-card::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px dashed var(--gold);
+  border-radius: 14px;
+  pointer-events: none;
+}
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(140, 114, 85, 0.15);
 }
 .event-icon {
   width: 52px;
@@ -654,9 +668,22 @@ button { font-family: inherit; cursor: pointer; }
 }
 .petal {
   position: absolute;
-  border-radius: 15% 70% 15% 70%;
+  border-radius: 50% 50% 50% 0%; /* Kelopak melati */
+  background: var(--white);
+  border: 1px solid rgba(197, 168, 128, 0.25);
   opacity: 0;
   animation: fall linear infinite;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+.petal::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  width: 4px;
+  height: 4px;
+  background: var(--sage-light); /* Tangkai hijau muda */
+  border-radius: 50%;
 }
 @keyframes fall {
   0% { transform: translateY(-10px) rotate(0deg); opacity: 0; }
@@ -713,12 +740,16 @@ footer .separator i { color: var(--blush); }
   }
   .hero-photo { height: 340px; }
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
-  .gal-item,
-  .gal-item:nth-child(4n+1),
-  .gal-item:nth-child(4n+3) {
-    height: 160px;
+  .gal-item {
+    height: 280px;
+    max-width: 200px;
+    border-radius: 100px 100px 12px 12px;
+  }
+  .gal-item:nth-child(2) {
+    height: 320px;
+    border-radius: 120px 120px 12px 12px;
   }
   .bottom-nav {
     padding: 8px 20px;
